@@ -86,3 +86,63 @@ body {
     left: 0px;
  }
  
+
+ body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Lobster', cursive;
+ }
+ 
+ .nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #fff;
+   padding: 10px;
+   text-align: center;
+   z-index: 1;
+ }
+ 
+ .title {
+   text-align: center;
+   padding: 50px;
+ }
+ 
+ .logo {
+   font-size: 36px;
+   color: #333;
+   transition: opacity 0.3s ease-in-out;
+ }
+ 
+ .logo:hover {
+   opacity: 0.5;
+ }
+ 
+ .marquee {
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 100%;
+   overflow: hidden;
+ }
+ 
+ .marquee img  {
+      width: 120px;
+      height: auto;
+ }
+
+ .train{
+   width: 400px;
+   height: 400px;
+ }
+
+ .logo {
+   color: #000; 
+   transition: color 0.3s; 
+   width: 500px;
+ }
+ 
+ .logo:hover {
+   color: #ccc; 
+ }
