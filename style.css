@@ -13,7 +13,16 @@ body {
   padding: 50px;
 }
 
+.text{
+  margin-left: 45rem;
+  margin-bottom: ;
+}
 
+.image{
+margin-right: 600px;
+width: 50rem;
+height: 50rem;
+}
 
 .logo-link:hover {
   opacity: 0.5;

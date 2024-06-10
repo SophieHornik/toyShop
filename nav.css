@@ -49,3 +49,7 @@ background-image: url('bg.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 }
+
+p{
+  padding-right: 2rem;
+}
