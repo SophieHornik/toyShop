@@ -5,45 +5,69 @@ body {
   background-image: url(bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
+.navbar {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
 
 .title {
   text-align: center;
   padding: 50px;
 }
 
-.text{
-  margin-left: 45rem;
-  margin-bottom: ;
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin-top: 80px; /* Add top margin to prevent content from being hidden under the navbar */
 }
 
-.image{
-margin-right: 600px;
-width: 50rem;
-height: 50rem;
+@media (min-width: 768px) {
+  .content-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
-.logo-link:hover {
-  opacity: 0.5;
+.image-container {
+  background-color: #D1D5DB;
+  width: 900px; /* Adjust width if necessary */
+  height: 900px; /* Adjust height if necessary */
+
 }
 
-.marquee {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+.image {
   width: 100%;
-  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
 }
 
-.marquee img {
-  width: 160px;
-  height: auto;
+.text-container {
+  max-width: 400px;
+  font-family: "Tulpen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1F2937; /* text-zinc-900 */
+  margin-left: 20px; 
+    max-width: 600px; /* Increase max width */
+    font-size: 3rem; /* Increase font size */
+    color: #1F2937; /* text-zinc-900 */
+    text-align: center; /* Center align text */
+    margin-top: 390px;
 }
 
-@font-face {
-  font-family: "SugarAndSpice";
-  src: url(/Sugar&Spicedemo.ttf);
+.text-container.dark {
+  color: #050404; /* dark:text-white */
 }
 
 .fonts {
@@ -51,14 +75,12 @@ height: 50rem;
   font-size: 4rem;
   color: #503B3B;
 }
-.logo:hover {
-  color: #ccc;
-}
 
-.logo-link {
-  justify-content: center;
-  color: #000;
-  transition: color 0.3s;
-  width: 500px;
+.map{
+  padding-top: 5rem;
+  padding-left: 16rem;
+  padding-right: 16rem;
+  padding-bottom: 0px;
+  opacity: 0.8;
+    border: 5px solid darkgoldenrod;
 }
-
